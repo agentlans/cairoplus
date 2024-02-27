@@ -151,7 +151,7 @@ image_surface_t* surface_from_wand(MagickWand* mw) {
 }
 
 // Deallocates the surface and its underlying data
-void free_surface(image_surface_t* img_surf) {
+void free_image_surface(image_surface_t* img_surf) {
   if (img_surf) {
     cairo_surface_destroy(img_surf->surface);
     free(img_surf->buffer);

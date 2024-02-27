@@ -20,7 +20,7 @@ image_surface_t* surface_from_wand(MagickWand* mw);
 MagickWand* wand_from_surface(image_surface_t* img_surf);
 
 // Deallocates the surface and its underlying data
-void free_surface(image_surface_t* img_surf);
+void free_image_surface(image_surface_t* img_surf);
 
 // Convenient interface like the Cairo Toy PNG API
 image_surface_t* image_surface_create_from_file(const char *filename);
